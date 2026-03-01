@@ -1,0 +1,19 @@
+{
+  "emotion_map": {
+    "happy": 0,
+    "neutral": 1,
+    "fearful": 2,
+    "disgust": 3,
+    "surprise": 4,
+    "sad": 5,
+    "angry": 6},
+
+  "train_weight": "./Result/best_model.pth",
+  "train_data_path": "./Dataset/AI_HUB/",
+  "save_data_path": "./Dataset/",
+
+  "seed": 2025,
+  "batch_size": 64,
+  "learning_rate": 2e-5,
+  "epochs": 5
+}
