@@ -40,7 +40,7 @@
 
 ## 4. 학습 알고리즘 및 최적 모델 저장 (src/train.py)
 
-프로젝트는 CNN기반의 Supervised-learning을 활용한 모델입니다.:
+본 모델은 CNN을 활용한 모델입니다.:
 
 ### Stage 1: Training (모델 학습)
 * **목적**: Train data를 모델에 학습시킴
