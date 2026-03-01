@@ -47,7 +47,6 @@ def extract_features(path, sr=16000, duration=20.0):
         print(f"Error: {e}")
         return None
 
-# 병렬 처리 실행
 def run_preprocessing(paths, labels, save_path):
     print("전처리 시작")
     features = Parallel(n_jobs=-1)(delayed(extract_features)(p) for p in tqdm(paths))

@@ -5,13 +5,11 @@ class EmotionCNN(nn.Module):
     def __init__(self, input_dim, num_classes=7):
         super(EmotionCNN, self).__init__()
 
-        # Conv 블록들을 입력 길이에 상관없이 동작하도록 정의
         self.layer1 = self._block(1, 512, 5)
         self.layer2 = self._block(512, 256, 5, dropout=0.3)
         self.layer3 = self._block(256, 128, 3, dropout=0.3)
         self.layer4 = self._block(128, 64, 3, dropout=0.3)
 
-        # 4번의 풀링을 거친 후의 차원을 자동으로 계산
         self.flatten_dim = self._get_flatten_size(input_dim)
 
         self.fc = nn.Sequential(
