@@ -57,6 +57,8 @@
 pip install -r requirements.txt
 ```
 ### Step 1: 데이터 전처리 및 모델 학습
+- 모델 학습에 사용한 데이터가 필요하시다면 아래의 구글드라이브 Zip 파일을 해제하여 넣어주세요.
+- https://drive.google.com/file/d/1Td8lFTja0fHrPPcsFVOZGB8NhVfBHZOW/view?usp=drive_link
 - 이미 train data가 Dataset 폴더에 들어있다면 --create_train_data 인자는 제외후 사용하시면 됩니다.
 ```bash
 python main.py --create_train_data --start_train
